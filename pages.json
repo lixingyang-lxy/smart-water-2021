@@ -1,0 +1,59 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "信息"
+			}
+		},
+		{
+			"path": "pages/list/index",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPage": "static/logo.png",
+			"selectedconPath": "static/logo.png",
+			"selectedColor": "pink",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/message/index",
+			"iconPage": "static/logo-ext-new.png",
+			"selectedconPath": "static/logo-ext-new.png",
+			"selectedColor": "pink",
+			"text": "信息"
+		}, {
+			"pagePath": "pages/list/index",
+			"iconPage": "static/logo-ext-new.png",
+			"selectedconPath": "static/logo-ext-new.png",
+			"selectedColor": "pink",
+			"text": "列表"
+		}]
+	},
+	"condition":{
+		"current": 2,
+		"list":[
+			{
+				"name":"信息",
+				"path":"pages/message/index",
+				"query":"id=80"
+			}
+		]
+	}
+}
